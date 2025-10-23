@@ -1,6 +1,6 @@
 ﻿namespace GerenciadorTarefasSimples.Controllers.Enums
 {
-    public enum TaskPriorityTaskStatus
+    public enum Status
     {
         Pending = 1,
         InProgress = 2,

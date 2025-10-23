@@ -1,6 +1,6 @@
 ﻿namespace GerenciadorTarefasSimples.Controllers.Enums
 {
-    public enum TaskPriority
+    public enum Priority
     {
         High = 1,
         Medium = 2,
