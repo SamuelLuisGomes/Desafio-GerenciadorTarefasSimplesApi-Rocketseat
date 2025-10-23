@@ -7,6 +7,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Adicionado para fazer com que todas as rotas da api sejam minusculas
+builder.Services.AddRouting(option => option.LowercaseUrls = true);
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

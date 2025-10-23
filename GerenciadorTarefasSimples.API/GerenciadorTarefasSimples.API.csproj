@@ -15,8 +15,4 @@
     <ProjectReference Include="..\GerenciadorTarefasSimples.Services\GerenciadorTarefasSimples.Services.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
