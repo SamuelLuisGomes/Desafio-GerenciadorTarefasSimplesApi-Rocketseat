@@ -1,3 +1,6 @@
+using GerenciadorTarefasSimples.Services.Filters;
+using GerenciadorTarefasSimples.Services.UseCases.Tasks;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -10,6 +13,9 @@ builder.Services.AddSwaggerGen();
 // Adicionado para fazer com que todas as rotas da api sejam minusculas
 builder.Services.AddRouting(option => option.LowercaseUrls = true);
 
+// Usando o AddSingleton podemos fazer a injecao de dependencia de deixar a mesma lista para todos os endpoint
+builder.Services.AddSingleton<ITasksRepository, TasksRepository>();
+builder.Services.AddMvc(option => option.Filters.Add(typeof(ExceptionFilter)));
 
 var app = builder.Build();
 
