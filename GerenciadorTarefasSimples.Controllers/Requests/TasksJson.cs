@@ -2,7 +2,7 @@
 
 namespace GerenciadorTarefasSimples.Controllers.Requests
 {
-    public class TaksJson
+    public class TasksJson
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
